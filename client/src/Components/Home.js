@@ -26,26 +26,32 @@ export default function Home() {
                <div style={divSpace}></div>
                <Container>
                     <div>
-                         <Table striped bordered hover size="sm">
-                              <thead>
-                                   <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                        <th>Location</th>
-                                        <th>Last Watered</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                   </tr>
-                              </thead>
+                         {plants.length > 0 ? (
+                              <div>
+                                   <Table striped bordered hover size="sm">
+                                        <thead>
+                                             <tr>
+                                                  <th>Id</th>
+                                                  <th>Name</th>
+                                                  <th>Location</th>
+                                                  <th>Last Watered</th>
+                                                  <th>Status</th>
+                                                  <th>Action</th>
+                                             </tr>
+                                        </thead>
 
-                              {plants.length > 0 && (
-                                   <tbody>
-                                        {plants.map((plant, i) => {
-                                             return <StatusRow data={plant} key={i} rerender={fetchPlants}></StatusRow>;
-                                        })}
-                                   </tbody>
-                              )}
-                         </Table>
+                                        {plants.length > 0 && (
+                                             <tbody>
+                                                  {plants.map((plant, i) => {
+                                                       return <StatusRow data={plant} key={i} rerender={fetchPlants}></StatusRow>;
+                                                  })}
+                                             </tbody>
+                                        )}
+                                   </Table>
+                              </div>
+                         ) : (
+                              <div> no plants to show</div>
+                         )}
                     </div>
                </Container>
           </div>
