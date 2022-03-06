@@ -20,6 +20,7 @@ npm install
 ```
 npm start
 ```
+http://localhost:3000
 
 ## Notes
 further detailed instructions are in each respective folder
