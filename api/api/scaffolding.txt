@@ -1,0 +1,6 @@
+﻿Scaffolding command to create models, dbcontext
+https://docs.microsoft.com/en-us/ef/core/cli/dotnet
+-f force
+-no-oncofiguring: supress the onconfiguring command in the db context, its a convenient method and we've set the connection string in the appsesttings
+
+dotnet ef dbcontext scaffold Name=defaltDatabase Microsoft.EntityFrameworkCore.Sqlite --output-dir Models --context-dir Data --namespace api.Models --context-namespace api.Data --context PlantContext -f --no-onconfiguring
