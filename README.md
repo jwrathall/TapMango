@@ -1,8 +1,11 @@
 # TapMango
 
 ## API
+
+### run
 open in visual studio, run via iis express
-client is expecting: https://localhost:44314/api/plants, ensure port number is correct or change in client
+
+### database
 the database is sqllite and included in the project, there should be no need to install anything.
 
 ## Client
@@ -20,3 +23,4 @@ npm start
 
 ## Notes
 further detailed instructions are in each respective folder
+client is expecting api to run on port: https://localhost:44314/api/plants, ensure port number is correct or change in client
