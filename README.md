@@ -6,4 +6,17 @@ client is expecting: https://localhost:44314/api/plants, ensure port number is c
 the database is sqllite and included in the project, there should be no need to install anything.
 
 ## Client
-The client is built using react 
+requirements:
+npm, node, react
+The client is built using react and will need to have its dependencies installed, navigate to the root client folder and enter in the cli
+```
+npm install
+```
+
+### run
+```
+npm start
+```
+
+## Notes
+further detailed instructions are in each respective folder
